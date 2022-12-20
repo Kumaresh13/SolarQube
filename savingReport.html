@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./solarQubeCSS/assets/css/SR_1.css">
+    <link rel="stylesheet" href="./solarQubeCSS/assets/css/third.css">
+    <link rel="stylesheet" href="./solarQubeCSS/assets/css/landing.css">
+    <title>Savings Report</title>
+</head>
+<body>
+    <div class="savingsReportContainer">
+        <div class="navbar1">
+            <a href="/" class="navbar1-left">
+                <img src="./solarQubeCSS/SolarQube_Logo.png" alt="">
+            </a>
+            <div class="navbar1-right">
+                <a href="/">Home</a>
+                <a href="/rentSolar">Rent Solar</a>
+                <a>About Us</a>
+                <a href="/FAQs">FAQs</a>
+                <div>
+                    <a href="/#contact-form">Contact Us</a> 
+                </div>
+            </div>
+        </div>
+        <div class="report-form-container">
+            <div class="report-form">
+                <div class="report-form-title">
+                    <div>Energy costs keep rising, we are here to help !</div>
+                    <hr class="report-dash">
+                    <div>Enter your details below to see if solar works for you</div>
+                </div>
+                <div class="report-form-content">
+                    <div class="report-input1">
+                        <div class="label">Pincode</div>
+                        <input type="number">
+                    </div>
+                    <div class="report-input1">
+                        <div class="label">Connection Type</div>
+                        <select name="" id="" class="connection">
+                            <option value="">Residential</option>
+                            <option value="">Workplace</option>
+                        </select>
+                    </div>
+                    <div class="report-input1">
+                        <div class="label">Average <span style="color:rgb(230, 130, 16);">monthly</span> electricity bill</div>
+                        <input type="number">
+                    </div>
+                    <div class="see-results-btn">
+                        <button id="see-results-btn">See Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay-container">
+            <div class="report-form overlay-form">
+                <div class="close-btn">
+                    <span class="material-symbols-outlined" id="close-btn">
+                        close
+                    </span>
+               </div>
+                <div class="overlay-form-title">
+                    <div>Please submit youur details below to receive your Energy</div>
+                    <div>Savings Report via Email/SMS <span style="font-size: 0.9rem;" class="material-symbols-outlined">
+                        arrow_right_alt
+                        </span>
+                    </div>
+                </div>
+                <div class="report-form-content">
+                    <div class="report-input1">
+                        <div class="label">Phone</div>
+                        <input type="number">
+                    </div>
+                    <div class="report-input1">
+                        <div class="label">Email</div>
+                        <input type="email">
+                    </div>
+                    <div class="overlay-btn" >
+                        <button id="overlay-btn">See Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="floating-btn">
+                <span class="material-symbols-outlined">call</span>
+                <div>+91-6397632318</div>
+            </div>
+        </div>
+    </div>
+    <script src="./solarQubeCSS/assets/js/SRscript.js"></script>
+</body>
+</html>

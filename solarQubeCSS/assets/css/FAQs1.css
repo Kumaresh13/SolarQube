@@ -1,0 +1,53 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.FAQs-container
+{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.FAQs-content
+{
+    margin-bottom: 1rem;
+}
+
+.FAQs-heading
+{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(18, 80, 156);
+    margin-bottom: 1rem;
+}
+
+.FAQs-collapsible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(227, 223, 223);
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid rgb(227, 223, 223);
+    border-radius: 1rem;
+    text-align: left;
+    outline: none;
+    font-weight: bold;
+  }
+
+  
+  .active, .FAQs-collapsible:hover {
+    background-color: rgb(228, 226, 226);
+    
+  }
+  
+  .FAQs-writing {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    transition: padding 0.4s ease-out;
+    background-color: #f0eeee;
+  }

@@ -1,0 +1,289 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.landing
+{
+    margin-top: 0.7rem;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-left
+{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.left-logo > img
+{
+    width: 40%;
+}
+
+.left-content
+{
+    margin-left:3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(73, 73, 206);
+}
+
+.left-button
+{
+    margin: 1rem 0rem 0rem 3rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(73, 73, 206);
+    border-radius: 10px;
+    width: 60%;
+    height: 3rem;
+}
+
+.left-button > div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-button > div > a
+{
+    text-decoration: none;
+}
+
+.left-button > div:hover > a
+{
+    color:white;
+}
+
+.info
+{
+    margin-top: 0.2rem;
+    margin-left: 3rem ;
+    font-size: 10px;
+}
+
+.left-button:hover
+{
+    background-color: rgb(73, 73, 206);
+    color: white;
+    cursor: pointer;
+}
+
+.left-icons
+{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-icons > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.left-icons > div > img
+{
+    width: 3rem;
+    height: 3rem;
+    transition: transform .5s ease;
+}
+
+.left-icons > div > img:hover
+{
+    transform: scale(1.3);
+}
+
+.left-icons > div > div
+{
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.landing-right
+{
+    width:50%;
+}
+
+.navbar
+{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.navbar > div:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar > div:last-of-type
+{
+    background-image: linear-gradient(to right, #154297, #FFFFFF);
+    height: 80%;
+    width: 7rem;
+    border: 1px solid rgb(45, 56, 152);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-graphic
+{
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphicBg
+{
+    width: 60%;
+    animation: rotation 30s infinite linear;
+    position: relative;
+}
+
+#PoV
+{
+    position: absolute;
+    width: 25%;
+    opacity: 0;
+    animation: fadeIn 4s infinite ease-in-out;
+  
+}
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+      opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+.pHgraphicBg
+{
+    width: 100%;
+    position: relative;
+}
+
+
+#PhImages
+{
+    position: absolute;
+    width: 25%;
+    animation: fadeIn 4s infinite ease-in-out;
+}
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.arrow
+{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.arrow > span
+{
+    animation: move 1.5s infinite ease-in-out;
+}
+
+@keyframes move
+{
+    0%
+    {
+        margin-bottom:1.5rem;
+    }
+    50%
+    {
+        margin-bottom:0;
+    }
+    100%
+    {
+        margin-bottom:1.5rem;
+    }
+}
+@media (min-width: 960px) {
+    body {
+       overflow-x: hidden;
+    }
+}
+
+.contact-container
+{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.floating-btn
+{
+    display: flex;
+    height: 2.5rem;
+    width: 15%;
+    border-left: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    font-weight:bold;
+    background-color: rgb(4, 142, 43);
+    border: 2px solid rgb(4, 142, 43);
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    position: absolute;
+    left: 97%;
+    bottom: 10%;
+    transition: left 1s;
+
+}
+
+.floating-btn > div
+{
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+}
+
+.floating-btn > span
+{
+    margin-left: 0.7rem;
+}
+
+.floating-btn:hover
+{
+    left: 86%;
+    cursor: pointer;
+}

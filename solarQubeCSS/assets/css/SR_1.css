@@ -1,0 +1,257 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar1
+{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+
+.navbar1-left
+{
+    width: 15vw;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.navbar1-left > img
+{
+    width: 100%;
+}
+
+.navbar1-right
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    font-size: 0.9rem;
+    margin-right: 4rem;
+}
+
+.navbar1-right > a
+{
+    text-decoration: none;
+}
+
+.navbar1-right > div:last-of-type
+{
+    height: 2rem;
+    width: 7rem;
+    border: 1px solid rgb(45, 56, 152);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar1-right > div:last-of-type:hover
+{
+    background-color: rgb(45, 56, 152);
+}
+
+.navbar1-right > div:last-of-type:hover > a
+{
+    color: rgb(248, 248, 248);
+}
+
+.navbar1-right > div:last-of-type > a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar1-right > a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.savingsReportContainer
+{
+    background-image: url("../../footer_bg.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.report-form-container
+{
+    display: flex;
+    margin-right: 2.5rem;
+    position: relative;
+    top:3rem;
+    margin-left: 4rem;   
+}
+
+.report-form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(230, 230, 230, 0.605);
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 25px;
+    width: 30%;
+    padding: 1.5rem;
+}
+
+.report-form-title > div:first-of-type
+{
+    font-size: 1.5rem;
+    color: rgb(230, 130, 16);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.report-dash
+{
+    border-width: 4px;
+    width: 50%;
+    color: rgb(230, 130, 16);
+}
+
+.report-form-title > div:last-of-type
+{
+    margin-top: 0.3rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.report-input1
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.label
+{
+    margin-left: 0.4rem;
+    color: rgb(48, 83, 172);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.connection
+{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 1rem;
+    height: 1.8rem;
+    padding-left: 1rem;
+}
+
+
+
+.see-results-btn
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.see-results-btn > button
+{
+    text-decoration: none;
+    height: 2rem;
+    width: 8rem;
+    background-color: rgb(232, 133, 11);
+    border: 1px solid rgb(232, 133, 11);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.see-results-btn > button:hover
+{
+    background-color: rgb(210, 114, 4);
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+#overlay-container
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;   
+}
+
+.overlay-form
+{
+    background-color: #d8d5d5;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+}
+
+.close-btn
+{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.close-btn:hover
+{
+    cursor: pointer;
+}
+
+.overlay-form-title
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.overlay-form-title > div
+{
+    font-weight: bold;
+    font-size: 0.8rem;
+    color:black;
+}
+
+.overlay-btn
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.overlay-btn > button
+{
+    height: 2rem;
+    width: 8rem;
+    background-color: rgb(79, 220, 109);
+    border: 1px solid rgb(79, 220, 109);
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.overlay-btn > button:hover
+{
+    background-color: rgb(47, 147, 4);
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
