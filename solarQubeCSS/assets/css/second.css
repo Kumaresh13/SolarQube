@@ -37,6 +37,7 @@
 {
     margin-top: 3rem;
     text-align: justify;
+    display: flex;
 }
 
 .part2-desc > span:last-child

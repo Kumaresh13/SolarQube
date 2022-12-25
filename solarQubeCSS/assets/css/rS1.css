@@ -35,6 +35,7 @@
     align-items: center;
     justify-content: center;
     width: 40%;
+    margin-top: 2rem;
 }
 
 .rentSolar-writing-title
@@ -53,7 +54,7 @@
 
 .rentSolar-writing-content > img
 {
-    width: 12%;
+    width: 15%;
 }
 
 .rentSolar-writing-content > div
@@ -80,5 +81,5 @@
 
 .rentSolar-Img > img
 {
-    width: 45%;
+    width: 57%;
 }

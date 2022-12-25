@@ -13,16 +13,16 @@ function change() {
 setInterval(change, 4000);
 
 
-var images = ['./solarQubeCSS/Ph_Img2.png', './solarQubeCSS/Ph_Img3.png', './solarQubeCSS/Ph_Img4.png', './solarQubeCSS/Ph_Img5.png', './solarQubeCSS/Ph_Img6.png', './solarQubeCSS/Ph_Img1.png'];
+var pHimages = ['./solarQubeCSS/Ph_Img2.png', './solarQubeCSS/Ph_Img3.png', './solarQubeCSS/Ph_Img4.png', './solarQubeCSS/Ph_Img5.png', './solarQubeCSS/Ph_Img6.png', './solarQubeCSS/Ph_Img1.png'];
 
-var index = 0;
+var index1 = 0;
 
-function change() {
-  document.getElementById('PhImages').src = images[index];
-  if (index == 5) {
-    index = 0;
+function change1() {
+  document.getElementById('PhImages').src = pHimages[index];
+  if (index1 == 5) {
+    index1 = 0;
   } else {
-    index++;
+    index1++;
   }
 }
-setInterval(change, 4000);
+setInterval(change1, 3000);
