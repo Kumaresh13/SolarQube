@@ -13,7 +13,7 @@ function change() {
 setInterval(change, 4000);
 
 
-var pHimages = ['./solarQubeCSS/Ph_Img2.png', './solarQubeCSS/Ph_Img3.png', './solarQubeCSS/Ph_Img4.png', './solarQubeCSS/Ph_Img5.png', './solarQubeCSS/Ph_Img6.png', './solarQubeCSS/Ph_Img1.png'];
+var pHimages = ['./solarQubeCSS/Ph_Img2.png', './solarQubeCSS/Ph_Img3.png', './solarQubeCSS/Ph_img4.png', './solarQubeCSS/Ph_img5.png', './solarQubeCSS/Ph_Img6.png', './solarQubeCSS/Ph_Img1.png'];
 
 var index1 = 0;
 
