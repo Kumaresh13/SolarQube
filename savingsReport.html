@@ -27,63 +27,64 @@
             </div>
         </div>
         <div class="report-form-container">
-            <div class="report-form">
+            <form class="report-form" method="post">
                 <div class="report-form-title">
                     <div>Energy costs keep rising, we are here to help !</div>
                     <hr class="report-dash">
                     <div>Enter your details below to see if solar works for you</div>
                 </div>
-                <div class="report-form-content">
+                <div class="report-form-content" >
                     <div class="report-input1">
                         <div class="label">Pincode</div>
-                        <input type="number">
+                        <input type="number" name="sRPincode">
                     </div>
                     <div class="report-input1">
                         <div class="label">Connection Type</div>
-                        <select name="" id="" class="connection">
+                        <select name="sRConnection" class="connection">
                             <option value="">Residential</option>
-                            <option value="">Workplace</option>
+                            <option value="">Commercial</option>
                         </select>
                     </div>
                     <div class="report-input1">
                         <div class="label">Average <span style="color:rgb(230, 130, 16);">monthly</span> electricity bill</div>
-                        <input type="number">
+                        <input type="number" name="sRBill">
                     </div>
                     <div class="see-results-btn">
-                        <button id="see-results-btn">See Results</button>
+                        <button id="see-results-btn" type="button">See Results</button>
+                    </div>
+                    <div id="overlay-container">
+                        <div class="report-form overlay-form">
+                            <div class="close-btn">
+                                <span class="material-symbols-outlined" id="close-btn">
+                                    close
+                                </span>
+                           </div>
+                            <div class="overlay-form-title">
+                                <div>Please submit youur details below to receive your Energy</div>
+                                <div>Savings Report via Email/SMS <span style="font-size: 0.9rem;" class="material-symbols-outlined">
+                                    arrow_right_alt
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="report-form-content" method="post">
+                                <div class="report-input1">
+                                    <div class="label">Phone</div>
+                                    <input type="number" name="sRPhNumber">
+                                </div>
+                                <div class="report-input1">
+                                    <div class="label">Email</div>
+                                    <input type="email" name="sREmail">
+                                </div>
+                                <div class="overlay-btn" >
+                                    <button id="overlay-btn" type="submit">See Results</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-        <div id="overlay-container">
-            <div class="report-form overlay-form">
-                <div class="close-btn">
-                    <span class="material-symbols-outlined" id="close-btn">
-                        close
-                    </span>
-               </div>
-                <div class="overlay-form-title">
-                    <div>Please submit youur details below to receive your Energy</div>
-                    <div>Savings Report via Email/SMS <span style="font-size: 0.9rem;" class="material-symbols-outlined">
-                        arrow_right_alt
-                        </span>
-                    </div>
-                </div>
-                <div class="report-form-content">
-                    <div class="report-input1">
-                        <div class="label">Phone</div>
-                        <input type="number">
-                    </div>
-                    <div class="report-input1">
-                        <div class="label">Email</div>
-                        <input type="email">
-                    </div>
-                    <div class="overlay-btn" >
-                        <button id="overlay-btn">See Results</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="contact-container">
             <div class="floating-btn">
                 <span class="material-symbols-outlined">call</span>
