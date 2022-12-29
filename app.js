@@ -65,7 +65,7 @@ app.post("/savingsReport", async (req, res) => {
   alert("Your response has been successfully recorded, You will receive your report soon");
 })
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`App is running on port ${PORT}`);
