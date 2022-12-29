@@ -65,17 +65,6 @@ app.post("/savingsReport", async (req, res) => {
   alert("Your response has been successfully recorded, You will receive your report soon");
 })
 
-app.post("/sR1", async (req, res) => {
-  console.log(req.body)
-  // const reportsContactJSON = {
-  //   number: req.body.sRPhNumber,
-  //   email: req.body.sREmail
-  // };
-  // await savingsReport.add(reportsContactJSON);
-  // res.redirect("/");
-  // alert("Your response has been successfully recorded, You will get your report in a short while");
-})
-
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
